@@ -1,5 +1,5 @@
 import getRandomNumber from "../utils/getRandomNumber";
-import "./style/FormLocation.css";
+import "./style/formLocation.css";
 
 const FormLocation = ({ setIdLocation }) => {
   const handleSumit = (e) => {
