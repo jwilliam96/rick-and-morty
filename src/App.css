@@ -1,0 +1,49 @@
+.body {
+  background-image: url("/imgBody.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resident-container {
+  max-width: 1500px;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-img {
+  max-width: 100%;
+}
+
+.page-container {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  padding: 30px;
+}
+
+.page-li-number {
+  padding: 20px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3em;
+  color: white;
+}
+
+.page-li-number:hover {
+  font-weight: 700;
+  font-size: 2em;
+  background-color: rgba(0, 128, 0, 0.476);
+}
+
+.color-page {
+  background-color: green;
+  color: white;
+}

@@ -1,0 +1,87 @@
+:root {
+  --bg-card: #1a262c;
+  --color-green: rgba(67, 178, 67);
+}
+
+.resident {
+  background-color: var(--bg-card);
+  color: white;
+  max-width: 320px;
+  border-radius: 0.8em;
+  overflow: hidden;
+  transition: transform 200ms ease;
+  cursor: pointer;
+}
+
+.resident:hover {
+  transform: scale(1.05);
+}
+
+.resident-header {
+  position: relative;
+}
+
+.resident-img {
+  width: 100%;
+}
+
+.resident-div-status {
+  width: max-content;
+  background-color: var(--bg-card);
+  position: absolute;
+  top: 1.5em;
+  padding: 4.8px 24px 4.8px 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.resident-status-circle {
+  width: 0.9em;
+  aspect-ratio: 1;
+  background-color: #aaa;
+  border-radius: 50%;
+}
+
+.Alive {
+  background-color: var(--color-green);
+}
+
+.Dead {
+  background-color: red;
+}
+
+.resident-body {
+  padding: 1em 0.8em 2em;
+}
+
+.resident-name {
+  color: var(--color-green);
+  text-align: center;
+}
+
+.resident-hr {
+  margin: 0.6em 0 1em 0;
+  border-color: #aaa5;
+}
+
+.resident-li-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.resident-ul-list {
+  display: grid;
+  gap: 0.8em;
+}
+
+.resident-span-title {
+  color: #aaa;
+  font-weight: 300;
+}
+.resident-span-value {
+  padding-left: 1em;
+  font-size: 1.1em;
+}

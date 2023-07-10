@@ -1,0 +1,33 @@
+.location-content {
+  background-color: var(--bg-card);
+  color: white;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.location-title {
+  text-align: center;
+  color: var(--color-green);
+}
+
+.location-ul-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.location-li-info {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.location-span-status {
+  color: rgb(159, 158, 158);
+  font-weight: 700;
+}
