@@ -5,6 +5,7 @@ import getRandomNumber from "./utils/getRandomNumber";
 import LocationInfo from "./components/LocationInfo";
 import ResidentCard from "./components/ResidentCard";
 import FormLocation from "./components/FormLocation";
+import Loader from "./components/Loader";
 
 function App() {
   const [location, setLocation] = useState();
@@ -50,9 +51,11 @@ function App() {
       </header>
       <FormLocation setIdLocation={setIdLocation} />
       {isLoading ? (
-        <h2>loading...</h2>
+        <Loader />
       ) : hasError ? (
-        <h1>✖️error, Ingresa un numero del 1 al 126 🙂</h1>
+        <h1 className="mensager-error">
+          error ✖️, Ingresa un numero del 1 al 126 🙂
+        </h1>
       ) : (
         <>
           <LocationInfo location={location} />
